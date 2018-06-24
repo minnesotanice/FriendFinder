@@ -1,0 +1,8 @@
+.jumbotron {
+    background: url(../images/pet-collage.png) beige no-repeat 70% 0;
+    background-size: contain;
+}
+.jumbotron .container {
+    color: black;
+    text-shadow: white 2px 2px;
+}
