@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 // https://nodejs.org/docs/latest/api/path.html
 const path = require('path');
 
+// expose the assets directory to access css and images directories
+app.use(express.static(path.join(__dirname, './app/public/assets')));
+
 // data parsing for express.js
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
